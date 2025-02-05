@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Anta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+    <title>Pokémon Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title"> Pokémon Survey Form </h1>
+    <p id="description">Welcome to the Pokémon Survey! Whether you're a seasoned Trainer or just starting your journey, we want to hear about your favorite Pokémon, your gameplay preferences, and your thoughts on the world of Pokémon. This survey is designed to gather insights from fans like you to better understand what makes Pokémon special to its community. Your responses will help us explore how players connect with the games, characters, and adventures that have captivated fans for decades. Let’s dive in and share your Pokémon story! </p> 
+      <form id="survey-form">
+          <fieldset id="content">
+              <label class="bold" id="name-label" for="first-name">
+               Full name<br> 
+                <input class="text-box" placeholder="enter your name here" id="name" name="first-name" type="text" required />
+            </label>
+             
+            <label class="bold" id="number-label"for="age">
+              Age<br>
+              <input class="text-box" placeholder="enter your email here" min="1" max="100" id="number" name="age" type="number" required /></label>
+            
+            <label class="bold" id="email-label" for="email">
+              Email<br>
+              <input class="text-box" placeholder="enter your email here" id="email" name="email" type="Email" required /></label> 
+        </fieldset>
+        <fieldset>
+          <label class="bold" for="dropdown">What is your favorite pokemon?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Eevee</option>
+            <option value="2">Pikachu</option>
+            <option value="3">Gengar</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+  </fieldset>
+  <fieldset id="group1">
+    <legend> What Pokemon games have you played?</legend> 
+         
+    <label for="Pokemon-sword-and-shield">
+            <input value="Pokemon-sword-and-shield" id="Pokemon-sword-and-shield" type="radio" name="group1" /> 
+      Pokemon sword and shield</label>
+    
+     <label for="Pokemon-black-and-white">
+            <input value="Pokemon-black-and-white" id="Pokemon-black-and-white" type="radio" name="group1"/> 
+       Pokemon black and white</label>
+                                                                                                         
+     <label for="Pokemon-go">
+             <input value="Pokemon-go" id="Pokemon-go" type="radio" name="group1"/>
+       Pokemon Go</label>
+                                                                                                                
+      <label for="Pokemon-scarlet-and-violet">
+        <input value="Pokemon-scarlet-and-violet" id="Pokemon- Scarlet-and-Violet" type="radio" name="group1" />
+        Pokemon Scarlet and Violet </label>
+      </fieldset>
+      <fieldset>
+          <legend> What pokemon genration are you most farmiliar with? </legend>
+  <input class="inline" value="Generation 1(Kanto)" id="checkbox" type="checkbox" required name="group1" />Generation 1(Kanto)
+        
+  <input class="inline" value="Generation 2(Johto) " id="checkbox" type="checkbox" required name="checkbox" />Generation 2(johto)
+ 
+  <input value="Generation 3(Hoenn)" id="terms-and-conditions" type="checkbox" required name="checkbox" />
+ Generation 3(Hoenn) 
+        
+   <input value="Generation 4(Sinnoh)" id="terms-and-conditions" type="checkbox" required name="checkbox" />
+ Generation 4(Sinnoh) 
+            </fieldset>
+      <label for="bio">What else do you want to share?
+            <textarea id="bio" placeholder="Leave a comment below"></textarea> 
+            </label>
+            <input id="submit" value="Submit" type="submit"/>
+            </form>
